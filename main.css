@@ -1,0 +1,216 @@
+
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  margin: 5px;
+}
+
+img {
+  width: 40px;
+}
+
+/* ---- typography ---- */
+
+body {
+  color: #111;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 147%;
+}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+p {
+  margin: 0;
+}
+
+
+
+/* ---- layout ---- */
+
+#site-header {
+    padding: 12px 0;
+    color: #1e1e1e;
+    background: #fbfbfb;
+    position: fixed;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+}
+
+nav ul {
+  margin: 0;
+  padding-top: 10px;
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+  padding-left: 5px;
+}
+
+nav li:first-child {
+  padding: 0;
+}
+
+nav a {
+  color: #1e1e1e;
+}
+
+#site-main {
+  margin-bottom: 60px;
+  padding-top: 120px;
+}
+
+.container {
+  margin: 0 20px;
+}
+
+#about {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+#about .image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.image img {
+  width: 100%;
+}
+
+#about .description {
+  flex: 1;
+}
+#works {
+  text-align: center;
+}
+
+.my-work {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#works article {
+  background-color: #fbfbfb;
+  box-shadow: 1px 1px 11px gray;
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#contact {
+  padding: 20px;
+  text-align: center;
+}
+
+#contact label {
+  display: block;
+}
+
+#contact button {
+  padding: 10px 30px;
+  background-color: yellow;
+}
+
+#site-footer {
+  color: #1e1e1e;
+  padding: 30px 0;
+  background: #fbfbfb;
+  text-align: center;
+}
+
+#site-footer li {
+  display: inline;
+  margin-left: 5px;
+}
+
+#site-footer li:first-child {
+  margin: 0;
+}
+
+form {
+  display: none;
+}
+
+form.visible {
+  display: inline;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 728px;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+/* ---- components ---- */
+
+.button {
+  width: 100%;
+  background-color: blue;
+  color: #fff;
+  border: 1px solid #fff
+}
+
+.button-alt {
+  color: blue;
+  background-color: #fff;
+}
+
+/* ---- section ---- */
+
+section.testimonials {
+  // ...
+}
+
+section.testimonials .button {
+  margin-bottom: 10px;
+}
+
+.interests {
+  color: cyan;
+}
+
+#contact {
+  background-color: black;
+  color: white;
+}
